@@ -198,10 +198,9 @@ The analysis framework is designed to investigate:
 
 
 ## Citation
-
-[@article{qin2025perception,
-  title={Perception of an AI Teammate in an Embodied Control Task Affects Team Performance, Reflected in Human Teammates' Behaviors and Physiological Responses},
-  author={Qin, Yinuo and Lee, Richard T and Sajda, Paul},
-  journal={arXiv preprint arXiv:2501.15332},
-  year={2025}
-}]
+	@article{qin2025perception,
+	  title={Perception of an AI Teammate in an Embodied Control Task Affects Team Performance, Reflected in Human Teammates' Behaviors and Physiological Responses},
+	  author={Qin, Yinuo and Lee, Richard T and Sajda, Paul},
+	  journal={arXiv preprint arXiv:2501.15332},
+	  year={2025}
+	}
