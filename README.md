@@ -121,6 +121,11 @@ Processes and analyzes speech communication patterns.
 **Outputs:**
 - `plots/comm_all.png`: Communication pattern comparison figure
 
+### `supp_xxx.py`
+Analyzes and results that included in supplementary material. 
+
+
+
 ## Data Structure
 
 ### Expected Data Files
