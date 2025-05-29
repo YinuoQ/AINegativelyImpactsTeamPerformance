@@ -245,9 +245,9 @@ def create_time_series_plot(pupil_df, grouping_vars, condition_labels,
         
         title = f"{' '.join(title_parts)}" if len(title_parts) > 1 else f"{title_parts[0]} {plot_title_prefix}"
         ax[idx].set_title(title, fontsize=20)
-        ax[idx].vlines(0, -2, 22, color='k', linestyles='--', alpha=0.3, linewidth=0.5)
+        ax[idx].vlines(0, -2, 30, color='k', linestyles='--', alpha=0.3, linewidth=0.5)
         ax[idx].set_xlim([-2.1, 2.1])
-        ax[idx].set_ylim([-2, 22])
+        ax[idx].set_ylim([-2, 30])
         ax[idx].tick_params(axis='x', labelsize=18)
         ax[idx].tick_params(axis='y', labelsize=18)
         ax[idx].spines['top'].set_visible(False)
@@ -627,42 +627,42 @@ def main():
         all_human_baseline, human_ai_baseline
     )
     
-    # PART 1: PUPIL SIZE TIME SERIES ANALYSIS
-    print("Generating pupil time series analysis plots...")
-    print("Pupil time series by role...")
-    plot_pupil_time_series_by_role(pupil_percent_change_df)
+    # # PART 1: PUPIL SIZE TIME SERIES ANALYSIS
+    # print("Generating pupil time series analysis plots...")
+    # print("Pupil time series by role...")
+    # plot_pupil_time_series_by_role(pupil_percent_change_df)
     
-    print("Pupil time series by difficulty...")
-    plot_pupil_time_series_by_difficulty(pupil_percent_change_df)
+    # print("Pupil time series by difficulty...")
+    # plot_pupil_time_series_by_difficulty(pupil_percent_change_df)
     
     print("Pupil time series by session...")
     plot_pupil_time_series_by_session(pupil_percent_change_df)
     
-    print("Pupil time series by communication...")
-    plot_pupil_time_series_by_communication(pupil_percent_change_df)
+    # print("Pupil time series by communication...")
+    # plot_pupil_time_series_by_communication(pupil_percent_change_df)
     
 
-    # PART 2: PUPIL SIZE AFTER EVENT ANALYSIS
-    print("Generating pupil after event analysis plots...")
-    print("Pupil after event by difficulty...")
-    plot_pupil_after_event_by_difficulty(pupil_percent_change_df)
+    # # PART 2: PUPIL SIZE AFTER EVENT ANALYSIS
+    # print("Generating pupil after event analysis plots...")
+    # print("Pupil after event by difficulty...")
+    # plot_pupil_after_event_by_difficulty(pupil_percent_change_df)
     
-    print("Pupil after event by communication...")
-    plot_pupil_after_event_by_communication(pupil_percent_change_df)
+    # print("Pupil after event by communication...")
+    # plot_pupil_after_event_by_communication(pupil_percent_change_df)
     
-    print("Pupil after event by session...")
-    plot_pupil_after_event_by_session(pupil_percent_change_df)
+    # print("Pupil after event by session...")
+    # plot_pupil_after_event_by_session(pupil_percent_change_df)
 
-    # PART 3: BLINK RATE ANALYSIS
-    print("Generating blink rate analysis plots...")
-    print("Blink rate by role and difficulty...")
-    plot_blink_rate_by_role_difficulty(all_human_blink_df_raw, human_ai_blink_df_raw)
+    # # PART 3: BLINK RATE ANALYSIS
+    # print("Generating blink rate analysis plots...")
+    # print("Blink rate by role and difficulty...")
+    # plot_blink_rate_by_role_difficulty(all_human_blink_df_raw, human_ai_blink_df_raw)
     
-    print("Blink rate by role and communication...")
-    plot_blink_rate_by_role_communication(all_human_blink_df_raw, human_ai_blink_df_raw)
+    # print("Blink rate by role and communication...")
+    # plot_blink_rate_by_role_communication(all_human_blink_df_raw, human_ai_blink_df_raw)
     
-    print("Blink rate by role and session...")
-    plot_blink_rate_by_role_session(all_human_blink_df_raw, human_ai_blink_df_raw)
+    # print("Blink rate by role and session...")
+    # plot_blink_rate_by_role_session(all_human_blink_df_raw, human_ai_blink_df_raw)
     
 
 if __name__ == '__main__':
